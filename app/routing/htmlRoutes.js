@@ -1,11 +1,19 @@
 var path = require('path');
 
-module.exports = function (app) {
-    app.get('/', function (req, res) {
-        res.sendFile(path.join(__dirname, '../public/home.html'));
-    });
-
-    app.get('/survey', function (req, res) {
-        res.sendFile(path.join(__dirname, '../public/survey.html'));
-    });
+var get_paths = {
+    '/'         : '../public/home.html',
+    '/survey'   : '../public/survey.html',
+    '*'         : '../public/home.html',
 };
+
+module.exports = function (app) {
+    for (let key in get_paths) {
+        // console.log(`Key: ${key}`);
+        // console.log(`Path: ${get_paths[key]}`);
+        app.get(key, (req, res) => {
+            // console.log(`Key: ${key}`);
+            // console.log(`Path: ${get_paths[key]}`);
+            res.sendFile(path.join(__dirname, get_paths[key]));
+        });
+    }
+}
