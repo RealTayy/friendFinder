@@ -3,7 +3,7 @@ var path = require('path');
 var get_paths = {
     '/'         : '../public/home.html',
     '/survey'   : '../public/survey.html',
-    '*'         : '../public/home.html',
+    // '*'         : '../public/home.html',
 };
 
 module.exports = function (app) {
@@ -17,3 +17,6 @@ module.exports = function (app) {
         });
     }
 }
+
+// OHHHH OK SO WHAT I DID WAS I MADE THE DEFAULT SHIT LINK TO MY HOME RIGHTTT
+// SO MY CSS FILES ARENT LINKING TO THEMSELVESSSS
