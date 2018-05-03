@@ -49,3 +49,7 @@ h1 {
     width: 300px;
     object-fit: cover;
 }
+
+form {
+    opacity: 0;
+}

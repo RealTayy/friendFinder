@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('#black-ball').animate({ top: '-25px' }, 0, 'easeOutCubic', function () {
         $('#black-ball').animate({ top: '50%' }, 1500, 'easeOutBounce', function () {
             $('#black-ball').animate({ height: '2500px', width: '2500px' }, 500, 'easeInCubic');
+            $('form').animate({ opacity: 1 }, 500, 'easeInCubic');
         })
     })
 
