@@ -35,3 +35,17 @@ h1 {
     border-radius: 1000em;
     z-index: -1;
 }
+
+#friendModal {
+    color: #333;
+}
+
+#friend-name {
+    font-size: 1.618em;
+}
+
+#friend-image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}

@@ -12,8 +12,12 @@ $(document).ready(function () {
             var answer = $(`#question${i}`).val().charAt(0);
             answers.push(answer);
         }
-        console.log(answers);
-        $.post('/api/friends', {results: answers});
-        // (answers);
-    });    
+        $.post('/api/friends', { results: answers })
+            .then((res) => {
+                console.log(res.name);
+                console.log(res.image);
+                $('#friend-name').text(res.name);
+                $('#friend-image').attr('src', res.image);
+            })
+    });
 });

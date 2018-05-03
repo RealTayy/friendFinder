@@ -53,7 +53,7 @@
         <div class="wrapper">
             <form id="survey-form">
                 <div class="form-group">
-                    <label for="question1">question1</label>
+                    <label for="question1">Do you like funny guys?</label>
                     <select class="form-control" id="question1">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -63,7 +63,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question2">question2</label>
+                    <label for="question2">Do you like nerdy-types?</label>
                     <select class="form-control" id="question2">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -73,7 +73,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question3">question3</label>
+                    <label for="question3">Do you adventerous people?</label>
                     <select class="form-control" id="question3">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -83,7 +83,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question4">question4</label>
+                    <label for="question4">Do you like serious types?</label>
                     <select class="form-control" id="question4">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -93,7 +93,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question5">question5</label>
+                    <label for="question5">Do you like villians?</label>
                     <select class="form-control" id="question5">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -103,7 +103,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question6">question6</label>
+                    <label for="question6">Do you like action orientated people?</label>
                     <select class="form-control" id="question6">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -113,7 +113,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question7">question7</label>
+                    <label for="question7">Do you like smooth talkers?</label>
                     <select class="form-control" id="question7">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -123,7 +123,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question8">question8</label>
+                    <label for="question8">Do you like drama in your life?</label>
                     <select class="form-control" id="question8">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -133,7 +133,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question9">question9</label>
+                    <label for="question9">Do you like machoness?</label>
                     <select class="form-control" id="question9">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -143,7 +143,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="question10">question10</label>
+                    <label for="question10">Do you like puzzles?</label>
                     <select class="form-control" id="question10">
                         <option>1 - Strongly Disagree</option>
                         <option>2 - Somewhat Disagree</option>
@@ -153,7 +153,28 @@
                     </select>
                 </div>
             </form>
-            <button type="button" id="the-button">sdf</button>
+            <button type="button" class="btn btn-light" id="the-button" data-toggle="modal" data-target="#friendModal">Find Friend</button>
+
+            <!-- This is the Modal! -->
+            <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="friendModalLabel">Congrats on your new friend!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div id="friend-name"></div>
+                            <img id="friend-image" src="" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
